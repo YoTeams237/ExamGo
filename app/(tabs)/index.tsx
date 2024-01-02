@@ -1,13 +1,13 @@
-import { SafeAreaView, StyleSheet, Text, ScrollView } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, ScrollView, View } from 'react-native';
 
 import EditScreenInfo from '../../components/EditScreenInfo';
 
 export default function TabOneScreen() {
   return (
     <SafeAreaView>
-      <ScrollView className="flex">
-        <Text>Yamete chorasia</Text>
-      </ScrollView>
+      <View>
+        <Text>google it</Text>
+      </View>
     </SafeAreaView>
   );
 }
