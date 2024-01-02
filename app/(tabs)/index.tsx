@@ -6,7 +6,8 @@ export default function TabOneScreen() {
   return (
     <SafeAreaView>
       <View>
-        <Text>google it</Text>
+        <Text>google lam </Text>
+        <Text>google lam </Text>
       </View>
     </SafeAreaView>
   );
