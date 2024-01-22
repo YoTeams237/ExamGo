@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import SplashScreen from 'react-native-splash-screen';
 
 const styles = StyleSheet.create({
   container: {
@@ -15,9 +14,7 @@ const styles = StyleSheet.create({
 });
 
 const AppSplashScreen: React.FC = () => {
-  useEffect(() => {
-    SplashScreen.hide();
-  }, []);
+
 
   return (
     <View style={styles.container}>

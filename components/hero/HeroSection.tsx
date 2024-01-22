@@ -38,17 +38,19 @@ const HeroSection: React.FC = () => {
 const styles = StyleSheet.create({
   container: {
     height: 200,
+    backgroundColor: "#2D05CE",
+    
   },
   item: {
     width: Dimensions.get("window").width,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#f9c2ff",
     padding: 20,
   },
   title: {
     fontSize: 32,
     fontWeight: "bold",
+    color: "#fff",
   },
 });
 
