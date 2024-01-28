@@ -1,5 +1,6 @@
 import React from "react";
 import { View, Text, StyleSheet, FlatList, Dimensions } from "react-native";
+import { Image } from "react-native";
 
 interface CarouselItem {
   id: string;
@@ -8,7 +9,7 @@ interface CarouselItem {
 
 const HeroSection: React.FC = () => {
   const data: CarouselItem[] = [
-    { id: "1", title: "Item 1" },
+    { id: "1", title: "" },
     { id: "2", title: "Item 2" },
     { id: "3", title: "Item 3" },
     { id: "4", title: "Item 4" },
