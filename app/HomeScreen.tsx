@@ -1,11 +1,11 @@
 import React from "react";
 import { View, Text, Button } from "react-native";
-import HeroSection from "../components/hero/HeroSection";
+import HeroCarousel from "../components/hero/HeroCorousel";
 
 const HomeScreen = () => {
   return (
     <View>
-      <HeroSection />
+    <HeroCarousel/>
     </View>
   );
 };

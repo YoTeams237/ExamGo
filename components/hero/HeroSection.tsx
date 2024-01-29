@@ -1,58 +1,69 @@
-import React from "react";
-import { View, Text, StyleSheet, FlatList, Dimensions } from "react-native";
-import { Image } from "react-native";
+import {
+  Text,
+  View,
+  Image,
+  ImageBackground,
+  StyleSheet,
+  TouchableOpacity,
+  Dimensions
+} from "react-native";
+import images from "../../constants/images";
+import { SIZES } from "../../constants/theme";
 
-interface CarouselItem {
-  id: string;
-  title: string;
-}
-
-const HeroSection: React.FC = () => {
-  const data: CarouselItem[] = [
-    { id: "1", title: "" },
-    { id: "2", title: "Item 2" },
-    { id: "3", title: "Item 3" },
-    { id: "4", title: "Item 4" },
-    { id: "5", title: "Item 5" },
-  ];
-
-  const renderItem: React.FC<{ item: CarouselItem }> = ({ item }) => (
-    <View style={styles.item}>
-      <Text style={styles.title}>{item.title}</Text>
-    </View>
-  );
-
+const HeroSection = () => {
   return (
-    <View style={styles.container}>
-      <FlatList
-        data={data}
-        renderItem={renderItem}
-        horizontal
-        pagingEnabled
-        showsHorizontalScrollIndicator={false}
-        keyExtractor={(item) => item.id}
-      />
-    </View>
+    <>
+      <View style={styles.container}>
+        <View style={styles.HeroText}>
+          <Text style={styles.HeaderText}>Secure the Online World</Text>
+          <Text style={styles.TextBody}>
+            Lets get you started with Cyber Security
+          </Text>
+          <TouchableOpacity style ={styles.enrollButton}>
+            <Text style={{textAlign:"center"}}>Enroll for Free</Text>
+          </TouchableOpacity>
+        </View>
+        <View>
+          <Image source={images.Group} />
+        </View>
+      </View>
+    </>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    height: 200,
-    backgroundColor: "#2D05CE",
+    flex: 1,
+    backgroundColor: "rgba(30, 0, 148, 1), rgba(45, 5, 206, 1)",
+    paddingTop: 45,
+    paddingBottom: 45,
+    paddingLeft: 10,
+    paddingRight: 20,
+    flexDirection: "row",
+    width: Dimensions.get('window').width,
+  },
+  HeroText: {
+    paddingRight: 20,
+  },
+  HeaderText: {
+    color: "white",
+    fontSize: SIZES.large,
+    fontWeight: "500"
+  },
+  TextBody: {
+    color: "white",
+    fontSize: SIZES.small,
     
   },
-  item: {
-    width: Dimensions.get("window").width,
-    justifyContent: "center",
-    alignItems: "center",
-    padding: 20,
-  },
-  title: {
-    fontSize: 32,
-    fontWeight: "bold",
-    color: "#fff",
-  },
-});
 
+  enrollButton :{
+backgroundColor:"white",
+width:120,
+padding:5,
+borderRadius:20,
+marginTop:20
+
+
+  }
+});
 export default HeroSection;
