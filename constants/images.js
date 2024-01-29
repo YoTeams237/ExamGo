@@ -7,6 +7,7 @@ import Background3 from "../assets/images/Background3.png";
 import Laboratory from "../assets/images/Laboratory.png";
 import map from "../assets/images/map.png";
 import chart from "../assets/images/chart.png";
+import Group from "../assets/images/Group.png";
 
 export default
     {
@@ -19,4 +20,5 @@ export default
         Laboratory,
         map,
         chart,
+        Group
     };
