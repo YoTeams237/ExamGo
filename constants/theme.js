@@ -2,6 +2,7 @@ const FONT = {
   regular: "DMRegular",
   medium: "DMMedium",
   bold: "DMBold",
+  
 };
 
 const SIZES = {
@@ -35,4 +36,4 @@ const SHADOWS = {
   },
 };
 
-export { COLORS, FONT, SIZES, SHADOWS };
+export { FONT, SIZES, SHADOWS };
