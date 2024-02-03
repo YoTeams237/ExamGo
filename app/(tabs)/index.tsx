@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import StartScreen from "../StartScreen";
-import { SafeAreaView, StyleSheet, ScrollView } from "react-native";
+import {ScrollView } from "react-native";
 import { SafeAreaView, StyleSheet } from "react-native";
 // import HomeScreen from "../";
 import SelectDepartment from "../SelectDepartment";

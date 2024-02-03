@@ -52,7 +52,7 @@ export default
         icon5,
         bgPayment,
         bgRegistration,
-        SCHOOLGIRL
+        SCHOOLGIRL,
         Group,
         schoolgirl,
         Frame2,
