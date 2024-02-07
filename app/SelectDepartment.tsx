@@ -6,11 +6,7 @@ import HeroSection from '../components/hero/HeroSection';
 const SelectDepartment: React.FC = () => {
   return (
     <View style={styles.container}>
-      {/* <DepHeroSection
-      /> */}
-      <HeroSection/>
-
-    
+      <DepHeroSection />
       {/* Add other components or sections below */}
     </View>
   );

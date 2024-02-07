@@ -3,7 +3,7 @@ import { View, StyleSheet, FlatList } from "react-native";
 
 const HeroCarousel = () => {
     const renderItem = () => {
-        return <HeroSection  />;
+        return <HeroSection />;
       };
   return (
     <View>
