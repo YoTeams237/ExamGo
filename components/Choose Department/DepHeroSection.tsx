@@ -9,6 +9,7 @@ import {
 } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import images from "../../constants/images";
+import { router } from "expo-router";
 
 const DepHeroSection = () => {
   const navigation = useNavigation();
@@ -38,7 +39,7 @@ const DepHeroSection = () => {
           >
             <TouchableOpacity
               style={styles.card}
-              onPress={() => handleCardPress("_layout")}
+              onPress={() => router.push("/(payment)/detailscreen")}
             >
               <Image source={images.Laboratory} />
               <Text style={styles.cardText}>Science</Text>
@@ -51,7 +52,7 @@ const DepHeroSection = () => {
           >
             <TouchableOpacity
               style={styles.card}
-              onPress={() => handleCardPress("SplashScreen")}
+              onPress={() => router.push("/(payment)/detailscreen")}
             >
               <Image source={images.map} />
               <Text style={styles.cardText}>Arts</Text>
@@ -66,7 +67,7 @@ const DepHeroSection = () => {
           >
             <TouchableOpacity
               style={styles.card}
-              onPress={() => handleCardPress("HomeScreen")}
+              onPress={() => router.push("/(payment)/detailscreen")}
             >
               <Image source={images.chart} />
               <Text style={styles.cardText}>Commercial</Text>
@@ -86,16 +87,10 @@ const styles = StyleSheet.create({
     alignContent: "center",
     alignItems: "center",
     justifyContent: "center",
-    //    borderBottomWidth: 15, // Add a bottom border with a height of 15 pixels
-    //   borderBottomLeftRadius: 20,
-    //  borderBottomColor: "#0B265F",
-    //   borderBottomRightRadius: 20,
   },
   container1: {
     paddingTop: 60,
     paddingBottom: 60,
-    // paddingLeft: 30,
-    //  paddingRight: 30,
     justifyContent: "space-between",
   },
   container2: {
@@ -116,6 +111,7 @@ const styles = StyleSheet.create({
     alignContent: "center",
   },
   icon: {
+    paddingRight: 10,
     paddingTop: 20,
     paddingBottom: 15,
     alignContent: "center",
@@ -134,7 +130,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontStyle: "normal",
     fontWeight: "800",
-    lineHeight: 26, // React Native handles percentage line heights differently
+    lineHeight: 26,
     letterSpacing: -0.216,
   },
 
@@ -143,8 +139,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     flexDirection: "row",
     alignContent: "center",
-    paddingBottom: 30,
-    marginTop: 12,
+    marginTop: 20,
   },
 });
 
