@@ -7,7 +7,7 @@ declare module "expo-router" {
   export * from 'expo-router/build';
 
   // prettier-ignore
-  type StaticRoutes = `/` | `/(payment)/detailscreen` | `/detailscreen` | `/(payment)/registrationscreen` | `/registrationscreen` | `/(payment)/_layout` | `/_layout` | `/(subjects)/_layout` | `/(tabs)/` | `/(tabs)` | `/(tabs)/Subjects` | `/Subjects` | `/(tabs)/two` | `/two` | `/(tabs)/_layout` | `/+html` | `/HomeScreen` | `/modal` | `/SelectDepartment` | `/SplashScreen` | `/StartScreen` | `/(subjects)/SubjectHomeScreen` | `/SubjectHomeScreen`;
+  type StaticRoutes = `/` | `/(payment)/_layout` | `/_layout` | `/(subjects)/_layout` | `/(tabs)/` | `/(tabs)` | `/(tabs)/two` | `/two` | `/(tabs)/_layout` | `/+html` | `/HomeScreen` | `/modal` | `/SelectDepartment` | `/SplashScreen` | `/(payment)/detailscreen` | `/detailscreen` | `/(payment)/registrationscreen` | `/registrationscreen` | `/(subjects)/SubjectHomeScreen` | `/SubjectHomeScreen` | `/(tabs)/Subjects` | `/Subjects` | `/StartScreen`;
   // prettier-ignore
   type DynamicRoutes<T extends string> = `/${CatchAllRoutePart<T>}`;
   // prettier-ignore
