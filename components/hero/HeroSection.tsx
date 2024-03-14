@@ -34,7 +34,6 @@ const HeroSection = () => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: "rgba(30, 0, 148, 1), rgba(45, 5, 206, 1)",
     paddingTop: 45,
     paddingBottom: 45,
@@ -55,13 +54,12 @@ const styles = StyleSheet.create({
     color: "white",
     fontSize: SIZES.small,
   },
-
   enrollButton: {
     backgroundColor: "white",
     width: 120,
     padding: 5,
     borderRadius: 20,
     marginTop: 20,
-  },
+  }
 });
 export default HeroSection;

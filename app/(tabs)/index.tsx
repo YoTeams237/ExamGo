@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
-import { SafeAreaView, StyleSheet } from "react-native";
-import HomeScreen from "../HomeScreen";
 import StartScreen from "../StartScreen";
-import { ScrollView } from "react-native-gesture-handler";
+import { SafeAreaView, StyleSheet, ScrollView } from "react-native";
 
 export default function TabOneScreen() {
   return (

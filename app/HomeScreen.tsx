@@ -3,6 +3,7 @@ import { View, Text, Button, ScrollView } from "react-native";
 import HeroCarousel from "../components/hero/HeroCorousel";
 import ChooseDepartment from "../components/hero/ChooseDepartment";
 
+
 const HomeScreen = () => {
   return (
     <ScrollView>
