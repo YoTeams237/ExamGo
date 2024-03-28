@@ -19,7 +19,7 @@ import icon4 from "../assets/images/icon4.png";
 import icon5 from "../assets/images/icon5.png";
 import bgPayment from "../assets/images/bgPayment.png";
 import bgRegistration from "../assets/images/bgRegistration.png";
-import SCHOOLGIRL from "../assets/images/SCHOOLGIRL.png";
+// import schoolgirl from "../assets/images/schoolgirl.png";
 
 
 
@@ -52,9 +52,9 @@ export default
         icon5,
         bgPayment,
         bgRegistration,
-        SCHOOLGIRL,
-        Group,
         schoolgirl,
+        Group,
+        // schoolgirl,
         Frame2,
         Frame3,
         Frame4,
