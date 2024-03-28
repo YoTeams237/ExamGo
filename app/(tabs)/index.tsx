@@ -10,9 +10,11 @@ import Art_Ol_Dashboard from "../Arts_Ol_Dashboard";
 export default function TabOneScreen() {
   return (
     <>
+    <StartScreen/>
+    {/* <HomeScreen/>  */}
      {/* <SelectDepartment/>
-     <HomeScreen/> */}
-     <Art_Ol_Dashboard/>
+     
+     {/* <Art_Ol_Dashboard/> */}
     </>
   );
 }
