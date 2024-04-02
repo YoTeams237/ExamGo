@@ -29,7 +29,8 @@ export default function SubjectLayout() {
     <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
       <Stack>
         <Stack.Screen name="SubjectHomeScreen" options={{}} />
-        {/* <Stack.Screen name="modal" options={{ presentation: "modal" }} /> */}
+        <Stack.Screen name="subject/[subjectName]" options={{}} />
+        <Stack.Screen name="allSubjects" options={{}} />
       </Stack>
     </ThemeProvider>
   );
