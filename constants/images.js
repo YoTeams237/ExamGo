@@ -28,6 +28,7 @@ import Frame2 from "../assets/images/Frame2.png";
 import Frame3 from "../assets/images/Frame3.png";
 import Frame4 from "../assets/images/Frame4.png";
 import Frame5 from "../assets/images/Frame5.png";
+import manbendingsearch from "../assets/images/manbendingsearch.png";
 
 export default
     {
@@ -59,4 +60,5 @@ export default
         Frame3,
         Frame4,
         Frame5,
+        manbendingsearch,
     };

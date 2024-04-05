@@ -64,7 +64,7 @@ export default function Home() {
             </Text>
           </View>
           <View style={{ width: "50%" }}>
-            <Image source={images.SCHOOLGIRL} />
+            <Image source={images.schoolgirl} />
           </View>
         </View>
       </LinearGradient>
@@ -91,7 +91,7 @@ export default function Home() {
             resizeMode="contain"
           >
             <TouchableOpacity
-              onPress={() => router.push("/SelectDepartment")}
+              onPress={() => router.push("/SearchScreen")}
               style={styles.card}
             >
               <Text style={styles.cardText}>English</Text>
