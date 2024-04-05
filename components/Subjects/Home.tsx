@@ -1,22 +1,30 @@
-import { Image, ImageBackground, SafeAreaView, StyleSheet, Text, Touchable, TouchableOpacity, View } from "react-native";
+import {
+  Image,
+  ImageBackground,
+  SafeAreaView,
+  StyleSheet,
+  Text,
+  Touchable,
+  TouchableOpacity,
+  View,
+} from "react-native";
 import React from "react";
-import dummySubjects, { Subject } from "../../constants/dummyData";
+import { dummySubjects } from "../../constants/dummyData";
 import { FONT, SIZES } from "../../constants/theme";
 import SearchBar from "../searchBar";
 import { LinearGradient } from "expo-linear-gradient";
 import images from "../../constants/images";
 import { router } from "expo-router";
-import { FlatList } from "react-native-gesture-handler";
 
 export default function Home() {
   const artsSubjects = dummySubjects.filter(
-    (subject: Subject) => subject.category === "Arts"
+    (subject) => subject.category === "Arts"
   );
   const scienceSubjects = dummySubjects.filter(
-    (subject: Subject) => subject.category === "Science"
+    (subject) => subject.category === "Science"
   );
   const commerceSubjects = dummySubjects.filter(
-    (subject: Subject) => subject.category === "Commerce"
+    (subject) => subject.category === "Commerce"
   );
   const currentTime = new Date();
   const currentHour = currentTime.getHours();
@@ -70,18 +78,30 @@ export default function Home() {
       </LinearGradient>
       <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
         <Text style={{ fontWeight: "bold" }}>Popular Subject</Text>
-        <Text style={{ color: "blue" }}>see all</Text>
+        <TouchableOpacity
+          onPress={() => router.push("/(subjects)/allSubjects")}
+        >
+          <Text style={{ color: "blue" }}>see all</Text>
+        </TouchableOpacity>
       </View>
       <View
-        style={{ paddingVertical: 20, width: "100%", justifyContent: "center", alignContent:"center"}}
+        style={{
+          paddingVertical: 20,
+          width: "100%",
+          justifyContent: "center",
+          alignContent: "center",
+        }}
       >
-        <View style={{ flexDirection: "row", justifyContent:"center" }}>
+        <View style={{ flexDirection: "row", justifyContent: "center" }}>
           <ImageBackground
             source={images.Background}
             style={styles.icon}
             resizeMode="contain"
           >
-            <TouchableOpacity style={styles.card}>
+            <TouchableOpacity
+              onPress={() => router.push("/(subjects)/subject/math")}
+              style={styles.card}
+            >
               <Text style={styles.cardText}>Math</Text>
             </TouchableOpacity>
           </ImageBackground>
@@ -91,7 +111,7 @@ export default function Home() {
             resizeMode="contain"
           >
             <TouchableOpacity
-              onPress={() => router.push("/SearchScreen")}
+              onPress={() => router.push("/(subjects)/subject/english")}
               style={styles.card}
             >
               <Text style={styles.cardText}>English</Text>
@@ -99,7 +119,13 @@ export default function Home() {
           </ImageBackground>
         </View>
 
-        <View style={{ flexDirection: "row", paddingTop: 15 , justifyContent: "center"}}>
+        <View
+          style={{
+            flexDirection: "row",
+            paddingTop: 15,
+            justifyContent: "center",
+          }}
+        >
           <ImageBackground
             source={images.Background2}
             style={styles.icon}
@@ -155,7 +181,7 @@ const styles = StyleSheet.create({
   Container: {
     flex: 1,
     padding: 10,
-    justifyContent:"center",
+    justifyContent: "center",
   },
   GreetingText: {
     fontWeight: "bold",
@@ -164,26 +190,26 @@ const styles = StyleSheet.create({
   Hero: {
     flexDirection: "row",
   },
-  
-//   container2: {
-//     alignItems: "center",
-//     flexDirection: "row",
-//     alignContent: "center",
-//     paddingLeft: 50,
-//     paddingRight: 50,
-//   },
-//   container4: {
-//     paddingTop: 20,
-//     justifyContent: "space-between",
-//     alignItems: "center",
-//     flexDirection: "row",
-//     alignContent: "center",
-//     paddingLeft: 50,
-//     paddingRight: 50,
-//   },
+
+  //   container2: {
+  //     alignItems: "center",
+  //     flexDirection: "row",
+  //     alignContent: "center",
+  //     paddingLeft: 50,
+  //     paddingRight: 50,
+  //   },
+  //   container4: {
+  //     paddingTop: 20,
+  //     justifyContent: "space-between",
+  //     alignItems: "center",
+  //     flexDirection: "row",
+  //     alignContent: "center",
+  //     paddingLeft: 50,
+  //     paddingRight: 50,
+  //   },
   card: {
-    marginVertical:20,
-    marginHorizontal:15,
+    marginVertical: 20,
+    marginHorizontal: 15,
     borderRadius: 10,
     justifyContent: "center",
     alignItems: "center",
@@ -211,12 +237,12 @@ const styles = StyleSheet.create({
     letterSpacing: -0.216,
   },
 
-//   container3: {
-//     justifyContent: "center",
-//     alignItems: "center",
-//     flexDirection: "row",
-//     alignContent: "center",
-//     paddingBottom: 30,
-//     marginTop: 12,
-//   },
+  //   container3: {
+  //     justifyContent: "center",
+  //     alignItems: "center",
+  //     flexDirection: "row",
+  //     alignContent: "center",
+  //     paddingBottom: 30,
+  //     marginTop: 12,
+  //   },
 });

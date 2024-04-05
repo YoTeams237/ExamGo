@@ -5,11 +5,12 @@ import HeroSection from "../components/hero/HeroSection";
 
 const SelectDepartment: React.FC = () => {
   return (
-    <View style={styles.container}>
-      <DepHeroSection />
-    
-      {/* Add other components or sections below */}
-    </View>
+    <ScrollView>
+      <View style={styles.container}>
+        <DepHeroSection />
+        {/* Add other components or sections below */}
+      </View>
+    </ScrollView>
   );
 };
 

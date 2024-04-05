@@ -19,16 +19,12 @@ import icon4 from "../assets/images/icon4.png";
 import icon5 from "../assets/images/icon5.png";
 import bgPayment from "../assets/images/bgPayment.png";
 import bgRegistration from "../assets/images/bgRegistration.png";
-// import schoolgirl from "../assets/images/schoolgirl.png";
-
-
-
 import schoolgirl from "../assets/images/schoolgirl.png";
 import Frame2 from "../assets/images/Frame2.png";
 import Frame3 from "../assets/images/Frame3.png";
 import Frame4 from "../assets/images/Frame4.png";
 import Frame5 from "../assets/images/Frame5.png";
-import manbendingsearch from "../assets/images/manbendingsearch.png";
+import headerBG from "../assets/images/headerBG.png";
 
 export default
     {
@@ -53,6 +49,7 @@ export default
         icon5,
         bgPayment,
         bgRegistration,
+        Group,
         schoolgirl,
         Group,
         // schoolgirl,
@@ -60,5 +57,5 @@ export default
         Frame3,
         Frame4,
         Frame5,
-        manbendingsearch,
+        headerBG,
     };
