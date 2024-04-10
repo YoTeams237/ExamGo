@@ -81,7 +81,7 @@ export default function Home() {
         <TouchableOpacity
           onPress={() => router.push("/(subjects)/allSubjects")}
         >
-          <Text style={{ color: "blue" }}>see all</Text>
+          <Text style={{ color: "blue" }}>see all </Text>
         </TouchableOpacity>
       </View>
       <View
@@ -148,7 +148,7 @@ export default function Home() {
       </View>
       <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
         <Text style={{ fontWeight: "bold" }}>Top Download</Text>
-        <Text style={{ color: "blue" }}>see all</Text>
+        <Text style={{ color: "blue" }}>see all </Text>
       </View>
     </SafeAreaView>
     // <View>

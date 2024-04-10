@@ -17,10 +17,15 @@ import images from "../../constants/images";
 import { router } from "expo-router";
 import { FlatList } from "react-native-gesture-handler";
 
-export default function OLArtsSearch() {
+export default function OlArtsSearchResults() {
   const handleSearch = (query: string) => {
     // Perform search logic based on the query
     console.log("Search query:", query);
+  };
+
+  const handleRecentSearchClick = (query: string) => {
+    // Handle navigation to a new page with the selected recent search
+    console.log("Navigating to:", query);
   };
 
   return (
@@ -29,9 +34,105 @@ export default function OLArtsSearch() {
         <SearchBar onSearch={handleSearch} />
         {/* Other components */}
       </View>
-      <View style={styles.Background}>
-        <ImageBackground source={images.manbendingsearch} style={{ flex: 2 }} />
+
+      <View
+        style={{
+          flexDirection: "row",
+          justifyContent: "space-between",
+          padding: 10,
+          marginBottom: 10,
+        }}
+      >
+        <Text style={{ fontWeight: "bold" }}>Recent Searches</Text>
+        <Text style={{ color: "blue" }}>clear </Text>
       </View>
+      <View style={styles.recentsContainer}>
+        <View>
+          <TouchableOpacity
+            style={{
+              flexDirection: "row",
+              alignItems: "center",
+              marginBottom: 15,
+            }}
+          >
+            <Image
+              source={images.recentsearchicon}
+              style={{ marginLeft: 10, marginRight: 8 }}
+            />
+            <Text style={{ flex: 1 }}>Lorem ipsum dolor sit amet</Text>
+            <Image
+              source={images.viewicon}
+              style={{ marginLeft: 0, marginRight: 10 }}
+            />
+          </TouchableOpacity>
+          {/* {searchHistory.map((item) => (
+        ))} */}
+        </View>
+        <View>
+          <TouchableOpacity
+            style={{
+              flexDirection: "row",
+              alignItems: "center",
+              marginBottom: 15,
+            }}
+          >
+            <Image
+              source={images.recentsearchicon}
+              style={{ marginLeft: 10, marginRight: 8 }}
+            />
+            <Text style={{ flex: 1 }}>Lorem ipsum dolor sit amet</Text>
+            <Image
+              source={images.viewicon}
+              style={{ marginLeft: 0, marginRight: 10 }}
+            />
+          </TouchableOpacity>
+          {/* {searchHistory.map((item) => (
+        ))} */}
+        </View>
+        <View>
+          <TouchableOpacity
+            style={{
+              flexDirection: "row",
+              alignItems: "center",
+              marginBottom: 15,
+            }}
+          >
+            <Image
+              source={images.recentsearchicon}
+              style={{ marginLeft: 10, marginRight: 8 }}
+            />
+            <Text style={{ flex: 1 }}>Lorem ipsum dolor sit amet</Text>
+            <Image
+              source={images.viewicon}
+              style={{ marginLeft: 0, marginRight: 10 }}
+            />
+          </TouchableOpacity>
+          {/* {searchHistory.map((item) => (
+        ))} */}
+        </View>
+        <View>
+          <TouchableOpacity
+            style={{
+              flexDirection: "row",
+              alignItems: "center",
+              marginBottom: 15,
+            }}
+          >
+            <Image
+              source={images.recentsearchicon}
+              style={{ marginLeft: 10, marginRight: 8 }}
+            />
+            <Text style={{ flex: 1 }}>Lorem ipsum dolor sit amet</Text>
+            <Image
+              source={images.viewicon}
+              style={{ marginLeft: 0, marginRight: 10 }}
+            />
+          </TouchableOpacity>
+          {/* {searchHistory.map((item) => (
+        ))} */}
+        </View>
+      </View>
+
       <View
         style={{
           flexDirection: "row",
@@ -100,12 +201,16 @@ const styles = StyleSheet.create({
     padding: 10,
     justifyContent: "center",
   },
-  Background: {
-    flex: 0,
-    height: 310,
-    width: 330,
-    justifyContent: "center",
+  recentsContainer: {
+    justifyContent: "space-between",
+    alignContent: "space-around",
   },
+  //   Background: {
+  //     flex: 0,
+  //     height: 310,
+  //     width: 330,
+  //     justifyContent: "center",
+  //   },
   card: {
     width: "auto",
     height: 50,

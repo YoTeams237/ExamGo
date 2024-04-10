@@ -25,6 +25,9 @@ import Frame3 from "../assets/images/Frame3.png";
 import Frame4 from "../assets/images/Frame4.png";
 import Frame5 from "../assets/images/Frame5.png";
 import headerBG from "../assets/images/headerBG.png";
+import manbendingsearch from "../assets/images/manbendingsearch.png";
+import recentsearchicon from "../assets/images/recentsearchicon.png";
+import viewicon from "../assets/images/viewicon.png";
 
 export default
     {
@@ -58,4 +61,7 @@ export default
         Frame4,
         Frame5,
         headerBG,
+        manbendingsearch,
+        recentsearchicon,
+        viewicon,
     };

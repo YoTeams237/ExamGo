@@ -6,12 +6,15 @@ import { SafeAreaView, StyleSheet } from "react-native";
 import SelectDepartment from "../SelectDepartment";
 import HomeScreen from "../HomeScreen";
 import Art_Ol_Dashboard from "../Arts_Ol_Dashboard";
+import OlArtsSearchResults from "../../components/Search Page/OlArtsSearchResults";
+import SearchResults from "../SearchResults";
 
 export default function TabOneScreen() {
   return (
     <>
     <ScrollView>
-      <StartScreen/>
+      {/* <StartScreen/> */}
+      <SearchResults/>
     </ScrollView>
     
     {/* <HomeScreen/>  */}
