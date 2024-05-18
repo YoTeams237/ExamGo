@@ -7,7 +7,7 @@ declare module "expo-router" {
   export * from 'expo-router/build';
 
   // prettier-ignore
-  type StaticRoutes = `/` | `/(payment)/detailscreen` | `/detailscreen` | `/(payment)/registrationscreen` | `/registrationscreen` | `/(payment)/_layout` | `/_layout` | `/(subjects)/allSubjects` | `/allSubjects` | `/(subjects)/SubjectHomeScreen` | `/SubjectHomeScreen` | `/(subjects)/_layout` | `/(tabs)/` | `/(tabs)` | `/(tabs)/Subjects` | `/Subjects` | `/(tabs)/two` | `/two` | `/(tabs)/_layout` | `/+html` | `/Arts_Ol_Dashboard` | `/HomeScreen` | `/modal` | `/SearchScreen` | `/SelectDepartment` | `/SplashScreen` | `/StartScreen` | `/SearchResults`;
+  type StaticRoutes = `/` | `/(payment)/detailscreen` | `/detailscreen` | `/(payment)/registrationscreen` | `/registrationscreen` | `/(payment)/_layout` | `/_layout` | `/(subjects)/allSubjects` | `/allSubjects` | `/(subjects)/SubjectHomeScreen` | `/SubjectHomeScreen` | `/(subjects)/_layout` | `/(tabs)/` | `/(tabs)` | `/(tabs)/Subjects` | `/Subjects` | `/(tabs)/two` | `/two` | `/(tabs)/_layout` | `/+html` | `/Arts_Ol_Dashboard` | `/HomeScreen` | `/modal` | `/SearchResults` | `/SearchScreen` | `/SelectDepartment` | `/SplashScreen` | `/StartScreen`;
   // prettier-ignore
   type DynamicRoutes<T extends string> = `/(subjects)/subject/${SingleRoutePart<T>}` | `/subject/${SingleRoutePart<T>}` | `/${CatchAllRoutePart<T>}`;
   // prettier-ignore
